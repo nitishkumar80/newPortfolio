@@ -1,0 +1,31 @@
+.footer-container {
+    width: 100%;
+    height: 20vh;
+    background-color: #25262A;
+}
+
+.footer-inner-container {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-logo {
+
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: monterrat, sans-serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+.footer-text {
+    color: white;
+    font-family: poppins, sans-serif;
+    letter-spacing: 1px;
+}

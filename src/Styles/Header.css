@@ -1,0 +1,277 @@
+.header-container {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    /* background-color: wheat; */
+    z-index: 11111;
+}
+
+.scrolled {
+    background-color: black;
+
+}
+
+.header-inner-container {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo-heading {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: monterrat, sans-serif;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    color: white;
+}
+
+.header-left-side {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 30px;
+    font-size: 18px;
+    font-family: poppins, sans-serif;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+/* Add hover effect */
+.nav-links ul li:hover a {
+    color: #ffaf29;
+}
+
+.nav-links ul li a.active {
+    color: #ffaf29;
+}
+
+
+.header-right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-button {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-family: monterrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-button:hover {
+    background-color: white;
+    color: #25262a;
+}
+
+.contact-button {
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    color: #25262a;
+    font-family: monterrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background-image: linear-gradient(91deg, #ffaf29 0%, #fecd1a 100%);
+    cursor: pointer;
+    box-shadow: 0 10px 15px 0 rgba(255, 174.99999999999997, 40.99999999999999, .25098039215686274);
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-button:hover {
+    box-shadow: none;
+}
+
+.user-icon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    /* color: #64f4ab; */
+    transition: all 0.2s ease-in-out;
+    color: black;
+    background-color: white;
+}
+
+.user-icon:hover {
+    background-color: #2D2E32;
+    color: #fecd1a;
+}
+
+.menu-icon {
+    font-size: 30px;
+    color: #e8e8e8;
+    display: none;
+}
+
+@media(max-width: 1024px) {
+    .header-inner-container ul {
+        display: none;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .user-icon,
+    .login-button {
+        display: none;
+    }
+}
+
+
+
+/* -----------------------*************--------------------------- */
+/* Hamburger */
+
+.hamburger-container {
+    width: 70vw;
+    height: 100vh;
+    background-color: #2D2E32;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 10px 15px 0 rgba(255, 174.99999999999997, 40.99999999999999, .25098039215686274);
+    display: flex;
+    justify-content: space-between;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger-inner-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+.hamburger-inner-container li {
+    width: 100%;
+    height: 50px;
+}
+
+.hamburger-inner-container a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: poppins, sans-serif;
+}
+
+.hamburger-btn {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.login-button-2 {
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-family: monterrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: all 0.3s ease-in-out;
+    display: grid;
+    place-content: center;
+}
+
+.login-button-2:hover {
+    background-color: white;
+    color: #25262a;
+}
+
+.contact-button-2 {
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    color: #25262a;
+    font-family: monterrat, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background-image: linear-gradient(91deg, #ffaf29 0%, #fecd1a 100%);
+    cursor: pointer;
+    box-shadow: 0 10px 15px 0 rgba(255, 174.99999999999997, 40.99999999999999, .25098039215686274);
+    border: none;
+    transition: all 0.3s ease-in-out;
+    display: grid;
+    place-content: center;
+}
+
+.link-text {
+    color: #25262a;
+}
+
+.contact-button-2:hover {
+    box-shadow: none;
+}
+
+.close-icon {
+    font-size: 30px;
+    color: white;
+    margin: 20px 30px 0px 0px;
+    cursor: pointer;
+}
+
+@media(max-width: 1024px) {
+    .hamburger-container {
+        width: 40vw;
+        display: flex;
+    }
+}
+
+@media(max-width: 768px) {
+    .hamburger-container {
+        width: 70vw;
+    }
+
+
+}

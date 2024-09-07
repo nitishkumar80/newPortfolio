@@ -1,0 +1,159 @@
+.portfolio-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #2D2E32;
+    padding-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-inner-container {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-more-btn {
+    width: 180px;
+    height: 60px;
+    color: #fecd1a;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #fecd1a;
+    transition: all 0.3s ease-in-out;
+    /* margin-top: 20px; */
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px 0 rgba(255, 174.99999999999997, 40.99999999999999, .25098039215686274);
+}
+
+.view-more-btn:hover {
+    box-shadow: none;
+}
+
+.project-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.project-container:nth-child(even) {
+    flex-direction: row-reverse;
+
+}
+
+.project-details {
+    width: 45%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.project-no {
+    color: #64f4ab;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.project-heading {
+    color: white;
+    font-family: monterrat, sans-serif;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.project-description {
+    color: white;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.project-img {
+    width: 45%;
+    height: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-btn {
+    margin-top: 30px;
+    width: 180px;
+    height: 20px;
+    color: #fecd1a;
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-btn:hover {
+    gap: 30px;
+}
+
+.bg-svg {
+    position: absolute;
+    top: 35%;
+    right: -5%;
+    width: 15%;
+    height: 15%;
+    object-fit: contain;
+}
+
+.bg-svg2 {
+    position: absolute;
+    top: 65%;
+    left: -10%;
+    width: 15%;
+    height: 15%;
+    object-fit: contain;
+}
+
+@media(max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+    }
+
+    .project-container:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .project-details {
+        width: 100%;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+}

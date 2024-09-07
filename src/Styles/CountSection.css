@@ -1,0 +1,61 @@
+.count-section {
+    width: 100%;
+    min-height: 50vh;
+    background-color: #2D2E32;
+    padding-top: 50px;
+}
+
+.count-section-inner-container {
+    width: 85%;
+    height: 100%;
+    margin: auto;
+}
+
+.counters-card-container {
+    width: 100%;
+    height: 300px;
+    /* background-color: yellow; */
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow: hidden;
+    gap: 10px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: #25262A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    color: #64F4AB;
+    font-family: poppins, sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.card-title {
+    color: white;
+    font-family: monterrat, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media(max-width: 1024px) {
+    .counters-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media(max-width: 768px) {
+    .counters-card-container {
+        grid-template-columns: repeat(1, 1fr);
+        height: 900px;
+    }
+}
